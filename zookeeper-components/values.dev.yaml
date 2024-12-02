@@ -1,0 +1,8 @@
+# zookeeper-components/values.dev.yaml
+zookeeper:
+  module: zookeeper
+  environment: dev
+  replicas: 3
+  persistence:
+    enabled: true
+    size: 5Gi

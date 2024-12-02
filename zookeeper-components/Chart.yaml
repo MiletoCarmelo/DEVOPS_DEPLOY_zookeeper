@@ -1,0 +1,12 @@
+# zookeeper-components/Chart.yaml
+apiVersion: v2
+name: zookeeper
+description: ZooKeeper deployment
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+dependencies:
+  - name: generic-zookeeper-backend
+    version: 0.1.0
+    repository: https://raw.githubusercontent.com/MiletoCarmelo/DEVOPS_HELM_generic_zookeeper_backend/github-pages
+    alias: zookeeper
