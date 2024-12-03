@@ -7,6 +7,6 @@ version: 0.1.0
 appVersion: "1.0.0"
 dependencies:
   - name: generic-zookeeper-backend
-    version: 0.1.4
+    version: 0.1.5
     repository: https://raw.githubusercontent.com/MiletoCarmelo/DEVOPS_HELM_generic_zookeeper_backend/github-pages
     alias: zookeeper
