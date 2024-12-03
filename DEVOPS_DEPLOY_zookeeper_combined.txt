@@ -1,0 +1,31 @@
+==== ./zookeeper-components/values.dev.yaml ====
+
+# zookeeper-components/values.dev.yaml
+zookeeper:
+  module: zookeeper
+  environment: dev
+  replicas: 3
+  containers:
+    resources:
+      requests:
+        cpu: "100m"    # Réduit de 250m
+        memory: "256Mi" # Réduit de 512Mi
+      limits:
+        cpu: "200m"    # Réduit de 500m
+        memory: "512Mi" # Réduit de 1Gi
+
+==== ./zookeeper-components/Chart.yaml ====
+
+# zookeeper-components/Chart.yaml
+apiVersion: v2
+name: zookeeper
+description: ZooKeeper deployment
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+dependencies:
+  - name: generic-zookeeper-backend
+    version: 0.1.5
+    repository: https://raw.githubusercontent.com/MiletoCarmelo/DEVOPS_HELM_generic_zookeeper_backend/github-pages
+    alias: zookeeper
+
