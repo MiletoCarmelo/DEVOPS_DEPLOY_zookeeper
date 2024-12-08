@@ -2,7 +2,7 @@
 zookeeper:
   module: zookeeper
   environment: dev
-  replicas: 3
+  replicas: 1
   containers:
     resources:
       requests:
